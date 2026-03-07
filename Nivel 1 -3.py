@@ -1,13 +1,11 @@
-class Libro:
-    nombre = "100 años de soledad"
-    autor = "gabriel garcia marquez"
-    paginas = 500
-    editorial = "alfaguara"
-    
-    def leer(self):
-        self.leer = True
-        return "persona que lee..."
-
-novela = Libro()
-print(novela.nombre)
-print(novela.leer())
+import random
+def num_aleatorio():
+    num = random.randint(1, 100) 
+    intento = int(input("Adivine el número de 1 a 100: "))
+    if intento > num:
+        print("El número es menor")
+    elif intento < num:
+        print("El número es mayor")
+    else:
+        print("¡Felicitaciones, adivinaste el número!")
+num_aleatorio()
