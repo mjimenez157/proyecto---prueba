@@ -1,2 +1,3 @@
 def contar_ocurrencias(cadena, palabra):
-  return palabra in cadena
+  return cadena.count(palabra)
+print(contar_ocurrencias("hola mundo, buenas mundo", "mundo"))
